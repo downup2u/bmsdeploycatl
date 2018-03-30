@@ -1,0 +1,14 @@
+version: '2'
+services:
+  nginxbmsp:
+    image: nginx
+    restart: always
+    network_mode: "host"
+    ports:
+        - "81:81"
+    expose:
+       - "81"
+    volumes:
+        - /etc/localtime:/etc/localtime:ro
+        - ./nginx.conf:/etc/nginx/conf.d/default.conf
+        - /root/bms/deploy/dist:/usr/share/nginx/html
