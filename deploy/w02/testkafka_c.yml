@@ -3,7 +3,7 @@ services:
     test2psrv:
       image: node:6.11.2
       restart: always
-      command: node ./test2p.js
+      command: node ./test2c.js
       working_dir: /app
       volumes:
         - /etc/localtime:/etc/localtime:ro

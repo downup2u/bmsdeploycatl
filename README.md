@@ -1,9 +1,9 @@
 # bmsdeploycatl
 
-W01	ecs-d493 Nginx 反向代理 192.168.1.11 121.204.128.149
-W02	ecs-40d6 Nginx 反向代理 Slave 192.168.1.12 27.150.186.192
-W03	ecs-f601 NodeJS（Web+App）Master 192.168.1.13 121.204.130.141
-W04	ecs-dc19 NodeJS（Web+App）Slave 192.168.1.14 121.204.131.36
+W01	ecs-d493 Nginx 反向代理 192.168.1.11 121.204.128.149 <---nginx
+W02	ecs-40d6 Nginx 反向代理 Slave 192.168.1.12 27.150.186.192 <--test
+W03	ecs-f601 NodeJS（Web+App）Master 192.168.1.13 121.204.130.141 <--node
+W04	ecs-dc19 NodeJS（Web+App）Slave 192.168.1.14 121.204.131.36 <--kafkadb
 
 W05	ecs-44e1 Kafka/Zookeeper Cluster 192.168.2.11 121.204.132.236	 
 W06	ecs-e871 Kafka/Zookeeper Cluster 192.168.2.12 121.204.132.246
