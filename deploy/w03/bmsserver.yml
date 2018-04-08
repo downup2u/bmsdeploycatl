@@ -11,7 +11,7 @@ services:
         - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
         - /root/bms/deploy/dist/log:/log
       environment:
-        - MONGO_URL=mongodb://192.168.2.11:27007,192.168.2.12:27007/bmsp
+        - MONGO_URL=mongodb://192.168.2.11:27007,192.168.2.12:27007/bmscatl
         - KAFKA_HOST=192.168.2.11:9092,192.168.2.12:9092,192.168.2.13:9092
         - listenport=5012
         - mongos=true
