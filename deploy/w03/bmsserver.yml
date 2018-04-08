@@ -15,7 +15,7 @@ services:
         - KAFKA_HOST=192.168.2.11:9092,192.168.2.12:9092,192.168.2.13:9092
         - listenport=5012
         - mongos=true
-        - rooturl=http://101.89.141.109:81
+        - rooturl=http://121.204.130.141:81
         - logdir=/log
       network_mode: "host"
       ports:
