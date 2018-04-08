@@ -13,14 +13,14 @@ services:
     environment:
       - DEBUG=dbh:handler,dbh:alarm,-mquery
       - DEBUG_COLORS=1
-      - MONGO_URL=mongodb://192.168.2.17:27007,192.168.2.18:27007/bmscatl
+      - MONGO_URL=mongodb://192.168.2.17:27007,192.168.2.18:27007/bmscatltest
       - KAFKA_HOST=192.168.2.11:9092,192.168.2.12:9092,192.168.2.13:9092
       - mongos=true
       - NodeID=666
       - partitionnumber=384
       - kcmsg=1000
-      - IndexTopic=pbmsindex
-      - CurrentTopic=pbmsindex
+      - IndexTopic=bmsindex
+      - CurrentTopic=bmsindex
       - GroupId=pbmsgid
       - logdir=/log
     network_mode: "host"
