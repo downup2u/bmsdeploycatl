@@ -10,6 +10,6 @@ services:
         - /root/bms/testkafka:/app
         - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
       environment:
-        - KAFKA_HOST=192.168.1.20:9092,192.168.1.114:9092,192.168.1.136:9092
+        - KAFKA_HOST=192.168.2.11:9092,192.168.2.12:9092,192.168.2.13:9092
         - IndexTopic=bmsindex
         - partitionnumber=384
