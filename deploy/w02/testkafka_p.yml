@@ -12,4 +12,4 @@ services:
       environment:
         - KAFKA_HOST=192.168.2.11:9092,192.168.2.12:9092,192.168.2.13:9092
         - IndexTopic=bmsindex
-        - partitionnumber=384
+        - partitionnumber=32
