@@ -10,6 +10,7 @@ services:
         - /root/bms/deploy/restfulsrv:/app
         - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
         - /root/bms/deploy/dist/log:/log
+        - /root/bms/deploy/dist/uploader:/uploader
       environment:
         - DEBUG=srvapp:*,-mquery
         - DEBUG_COLORS=1
@@ -19,6 +20,7 @@ services:
         - mongos=true
         - rooturl=http://121.204.130.141:81
         - logdir=/log
+        - uploaddir=/uploader
       network_mode: "host"
       ports:
          - "5012:5012"
