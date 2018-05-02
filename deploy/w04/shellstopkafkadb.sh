@@ -30,3 +30,11 @@ docker-compose -f ./kafkadb415.yml down
 docker-compose -f ./kafkadb416.yml down
 docker-compose -f ./kafkadb417.yml down
 docker-compose -f ./kafkadb418.yml down
+docker-compose -f ./kafkadb511.yml down
+docker-compose -f ./kafkadb512.yml down
+docker-compose -f ./kafkadb513.yml down
+docker-compose -f ./kafkadb514.yml down
+docker-compose -f ./kafkadb515.yml down
+docker-compose -f ./kafkadb516.yml down
+docker-compose -f ./kafkadb517.yml down
+docker-compose -f ./kafkadb518.yml down
