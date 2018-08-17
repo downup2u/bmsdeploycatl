@@ -1,0 +1,16 @@
+version: '2'
+services:
+  bmsshardres1bk:
+    container_name: bmsshardres1bk
+    image:  mongo:3.4
+    restart: always
+    command: mongod --shardsvr --replSet bmsshardres1 --dbpath /data/db --port 30001
+    ports:
+      - 30001:30001
+    expose:
+      - "30001"
+    environment:
+      TERM: xterm
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /catlcluster2/mongo_cluster/bmsshardres1/db:/data/db
