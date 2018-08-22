@@ -12,6 +12,7 @@ services:
       - /root/bms/deploy/dist/log:/log
     environment:
       - srvredis_host=192.168.2.19
+      - DEBUG=dbh:kc
       - DEBUG_COLORS=1
       - MONGO_URL=mongodb://192.168.2.17:27007,192.168.2.18:27007/bmscatl
       - KAFKA_HOST=192.168.2.11:9092,192.168.2.12:9092,192.168.2.13:9092
