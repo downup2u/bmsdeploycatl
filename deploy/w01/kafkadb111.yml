@@ -11,7 +11,6 @@ services:
       - /root/bms/deploy/kafkadb/node_docker:/app/node_modules/node-rdkafka/build/Release
       - /root/bms/deploy/dist/log:/log
     environment:
-      - istest=true
       - srvredis_host=192.168.2.19
       - DEBUG=dbh:kc
       - DEBUG_COLORS=1
