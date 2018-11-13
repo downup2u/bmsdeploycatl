@@ -1,7 +1,7 @@
 version: '2'
 services:
-  bmsshardres1bk:
-    container_name: bmsshardres1bk
+  bmsshardres1bk1114:
+    container_name: bmsshardres1bk1114
     image:  mongo:3.4
     restart: always
     command: mongod --shardsvr --replSet bmsshardres1 --dbpath /data/db --port 22001
